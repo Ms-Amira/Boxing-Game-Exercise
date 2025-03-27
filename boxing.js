@@ -17,7 +17,7 @@ function generateDamage() {
 function applyDamage(opponent, damage) {
     if (damage < 6) {
     console.log(`${currentPlayer.name} lands a basic hit on ${opponent.name}!`);
-    } else if ( 6 >= 9) {
+    } else if ( damage >= 6 && damage  <= 9) {
     console.log(`${currentPlayer.name} lands a critical hit on ${opponent.name}!`);
     } else {
     console.log(`${currentPlayer.name} lands a KNOCKOUT on ${opponent.name}!🥊`);
